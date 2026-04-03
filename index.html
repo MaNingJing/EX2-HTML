@@ -81,12 +81,18 @@
                     </select>
                 </p>
                 <p>Character not in the list? Write their name below:</p>
-                <p><input type="text" placeholder="Enter character name" size="40"></p>
+                <p><input type="text" placeholder="Enter character name"></p>
                 <p>Why do you like this character?</p>
                 <textarea rows="5" cols="50" placeholder="State your reasons in a couple of lines..."></textarea>
                 <h3>Tell us a bit more about yourself</h3>
                 <p>Your Name: <input type="text" placeholder="Enter your name"></p>
-                <p>Your Gender: <input type="radio" name="gender"> Male <input type="radio" name="gender"> Female</p>
+                <p>
+                    Your Gender: 
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                </p>
                 <p>Your Date of Birth: <input type="text" placeholder="dd.mm.yyyy"></p>
                 <p>Your Email: <input type="email" placeholder="Enter your email"></p>
                 <input type="submit" value="Submit">
